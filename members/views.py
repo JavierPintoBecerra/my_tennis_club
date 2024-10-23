@@ -36,5 +36,6 @@ def testing(request):
   template = loader.get_template('template.html')
   context = {
     'mymembers': mymembers,
+    'greeting': 2   # this will be passed to the template to test the if statement
   }
   return HttpResponse(template.render(context, request))
