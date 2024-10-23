@@ -8,5 +8,11 @@
     {% endfor %}
   </ul>
 
+  {% if greeting == 1 %}
+    <h1>Hello, this is my first Django project </h1>
+  {% else %}
+    <h1>Bye, this is my first Django project</h1>
+  {% endif %}
+
 </body>
 </html>
