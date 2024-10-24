@@ -5,6 +5,12 @@
   <ul>
     {% for x in mymembers %}
       <li>{{ x.first_name }}</li>
+
+      {% if 'Valeria' in x.first_name %}
+        <h1>Hello, there is a Valeria here</h1>
+      {% else %}
+        <h1>Say what?</h1>
+      {% endif %} 
     {% endfor %}
   </ul>
 
@@ -14,6 +20,7 @@
   {% else %}
     <h1>Bye, this is my first Django project</h1>
   {% endif %}
+
 
 </body>
 </html>
